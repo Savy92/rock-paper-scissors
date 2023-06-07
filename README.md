@@ -1,39 +1,65 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors
 
-Welcome,
+## Introduction
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Welcome to my first interactive game site. My take on the beloved 100+ year old game provides users with an interactive version in which has been designed to be responsive and accessible on all device platform.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+Whether users want to just engage for a mental challenge, compete on the scoreboards or just have a little bit of fun. The website is designed to provide users with a clear and easy to navigate interface with clean and correct javascript to allow the game to run smoothly.
 
-## Codeanywhere Reminders
+<hr>
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## User Experience (UX)
 
-`python3 -m http.server`
+### User Stories
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+#### First Time Visitor Goals
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- As a first time visitor, I want to easily understand the main purpose of the site and learn more about how it works and what it offers.
+- As a first time visitor, I want to quickly determine if the site is relevant for my needs.
+- As a first time visitor, i want to be able to play on any device and from anywhere.
+- As a first time visitor, I want to be able to easily navigate throughout the site.
+- As a first time visitor, I want to interact with the game without and delays or lag.
 
-`http_server`
+#### Returning Or Frequent Visitor Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- As a returning user, I want the game to run smoothly without disruptions.
+- As a returning user, I want the to be able to see updated leaderboards.
+- As a returning user, I want to continue to build on my score.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+<hr>
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Design
 
-To log into the Heroku toolbelt CLI:
+### Colour Scheme
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+to be written.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Typography
 
----
+to be written.
 
-Happy coding!
+### Imagery
+
+to be written.
+
+<hr>
+
+## Features
+
+<hr>
+
+## Technologies Used
+
+### Languages Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts:
+- Google fonts were used to import the 'Roboto' font into the style.css file which is used on all sections throughout the project. 'Poltawski Nowy' was also imported to style all headings throught the page.
+- Font Awesome:
+- Font Awesome was used for the facilities section & the footer section to add icons for aesthetic and UX purposes.
+- Git:
+- Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- GitHub
+- GitHub is used to store the projects code after being pushed from Git.
