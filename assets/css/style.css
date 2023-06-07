@@ -1,3 +1,4 @@
+/* Import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poltawski+Nowy:wght@500&family=Roboto:wght@300&display=swap');
 
 * {
@@ -62,7 +63,22 @@ section {
 
 }
 
+.match-page button {
+    color: #20201F;
+    background: #D3D521;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
 .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+}
+
+.option-text {
     display: flex;
     justify-content: space-around;
     align-items: center;
