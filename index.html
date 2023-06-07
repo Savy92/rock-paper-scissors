@@ -18,10 +18,10 @@
         <!--Scores-->
         <div class="score-area">
             <div class="player-score">
-                <p>Player <span>0</span></p>
+                <p>Player <span id="player">0</span></p>
             </div>
             <div class="computer-score">
-                <p>Computer <span>0</span></p>
+                <p>Computer <span id="computer">0</span></p>
             </div>
         </div>
         <!--Home-screen-->
@@ -38,11 +38,14 @@
                     <img class="computer-hand" src="assets/images/full-length-rock.png" alt="">
                 </div>
                 <div>
-                    <h2 class="option-text">Choose your option:</h2>
+                    <h2 class="result">Choose your option:</h2>
                     <div class="options">
-                        <button><i class="fa-solid fa-hand-fist fa-2x"></i></button>
-                        <button><i class="fa-solid fa-hand-scissors fa-2x"></i></button>
-                        <button><i class="fa-solid fa-hand fa-2x"></i></button>
+                        <button aria-label="Rock" data-choice="0" class="option-image"><i
+                                class="fa-solid fa-hand-fist fa-2x"></i></button>
+                        <button aria-label="Paper" data-choice="1" class="option-image"><i
+                                class="fa-solid fa-hand fa-2x"></i></button>
+                        <button aria-label="Scissors" data-choice="2" class="option-image"><i
+                                class="fa-solid fa-hand-scissors fa-2x"></i></button>
                     </div>
                 </div>
             </div>

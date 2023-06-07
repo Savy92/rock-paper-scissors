@@ -79,7 +79,7 @@ body {
     border: none;
 }
 
-.option-text {
+.result {
     display: flex;
     justify-content: space-around;
     align-items: center;
