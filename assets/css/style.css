@@ -10,7 +10,9 @@
 body {
     font-family: "Indie FLower", sans-serif;
     font-weight: 300;
-    background-image: linear-gradient(to bottom, #dad1dc, #dad1dc, #dad1dc, #dad1dc, #dad1dc, #cbc2ce, #bcb4c0, #ada6b2, #8c8794, #6c6977, #4e4d5b, #313240);
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title h1 {
@@ -20,11 +22,6 @@ body {
     color: #20201F;
     text-shadow: -1px 0 #D3D521, 0 1px #D3D521, 1px 0 #D3D521, 0 -1px #D3D521;
 }
-
-section {
-    height: 100vh;
-}
-
 .score-area {
     color: #fff;
     display: flex;
@@ -94,7 +91,4 @@ section {
     width: 100%;
     position: absolute;
     top: 0;
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
