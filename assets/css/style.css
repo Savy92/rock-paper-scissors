@@ -20,7 +20,7 @@ body {
     justify-content: space-around;
     font-size: 100px;
     color: #20201F;
-    text-shadow: -1px 0 #D3D521, 0 1px #D3D521, 1px 0 #D3D521, 0 -1px #D3D521;
+    text-shadow: -1px 0 #E7E92D, 0 1px #E7E92D, 1px 0 #E7E92D, 0 -1px #E7E92D;
 }
 .score-area {
     color: #fff;
@@ -48,7 +48,7 @@ body {
     font-family: "Indie FLower", sans-serif;
     border: none;
     color: #20201F;
-    background: #D3D521;
+    background: #E7E92D;
     font-size: 30px;
     border-radius: 10px;
     font-weight: bold;
@@ -63,7 +63,7 @@ body {
 
 .match-page button {
     color: #20201F;
-    background: #D3D521;
+    background: #E7E92D;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -91,4 +91,8 @@ body {
     width: 100%;
     position: absolute;
     top: 0;
+}
+
+.options button {
+        font-size: 2em;
 }
