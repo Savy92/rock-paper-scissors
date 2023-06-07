@@ -43,7 +43,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    position: relative;
 }
 
 .intro-page button {
@@ -60,10 +59,9 @@ section {
 }
 
 .match-page {
-    position: absolute;
-    top: 0;
-    
-
+        margin: auto;
+    text-align: center;
+    margin-top: 120px;
 }
 
 .match-page button {
@@ -89,4 +87,14 @@ section {
 
 .player-hand {
     transform: scaleX(-1);
+}
+
+.match-container {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
