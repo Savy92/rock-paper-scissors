@@ -18,8 +18,10 @@ const choices = ["rock", "paper", "sicssors"];
 let Pscore = 0;
 let cScore = 0;
 
-function startGame() {
-    start.addEventListener("click", function () => {
-        introScreen.classList.add("fadeOut");
-    });
-};
+/**
+ * Add a click event listener to new game button
+ */
+start.addEventListener("click", () => {
+    introScreen.classList.add("fadeOut");
+    gameScreen.classList.add("fadeIn");
+});
