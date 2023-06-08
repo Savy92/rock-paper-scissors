@@ -27,7 +27,12 @@ const game = () => {
         optionButtons.forEach((button) => {
             button.addEventListener('click', function (e) {
                 const newHand = e.currentTarget.ariaLabel.toLowerCase();
-                playerHand.src = `assets/images/full-length-${test}.png`;
+                playerHand.src = `assets/images/full-length-${newHand}.png`;
+                if (newHand === 'paper' || newHand === 'scissors') {
+                    playerHand.style.transform = "rotate(90deg)";
+                } else {
+                    playerHand.style.transform = "scaleX(-1)";
+                }
                 // Computer result
                 const randomNumber = Math.floor(Math.random() * 3);
                 const computerResult = computerChoice[randomNumber];
