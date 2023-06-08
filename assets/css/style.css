@@ -13,7 +13,7 @@ body {
     background-image: url("../images/background.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 
 .container {
@@ -21,15 +21,6 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-}
-
-.bg-image {
-    background-image: url("../images/background.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
 }
 
 .title h1 {
@@ -108,6 +99,11 @@ body {
 
 .player-hand {
     transform: scaleX(-1);
+    width: 100%;
+}
+
+.computer-hand {
+    width: 100%;
 }
 
 .match-container {
@@ -138,12 +134,24 @@ div.fadeIn {
 }
 
 .img-div {
-    flex: 33.33%;
+    width: 50%;
 }
 
 /* media queries */
 
 /* for larger and medium screens size from 1200px wide and down */
 @media screen and (max-width: 900px) {
+    .title h1 {
+        font-size: 60px;
+    }
+}
 
+@media screen and (max-width: 540px) {
+    .title h1 {
+        font-size: 35px;
+    }
+    .score-area p {
+        font-size: 25px;
+        margin-top: 40px;
+    }
 }
