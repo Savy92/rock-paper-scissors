@@ -65,6 +65,12 @@ body {
     cursor: pointer;
 }
 
+.rules {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
 .match-page {
     margin: auto;
     text-align: center;
@@ -139,13 +145,14 @@ div.fadeIn {
 
 /* media queries */
 
-/* for larger and medium screens size from 1200px wide and down */
+/* for larger and medium screens size from 900px wide and down */
 @media screen and (max-width: 900px) {
     .title h1 {
         font-size: 60px;
     }
 }
 
+/* for small and medium screens size from 540px wide and down */
 @media screen and (max-width: 540px) {
     .title h1 {
         font-size: 35px;

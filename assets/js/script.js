@@ -69,34 +69,35 @@ const game = () => {
                     if (computerResult === 'scissors') {
                         result.textContent = 'You Win!';
                         pScoreElement.textContent = ++pScore;
-                        return;
                     } else if (computerResult === 'paper') {
                         result.textContent = 'You lost this round!';
                         cScoreElement.textContent = ++cScore;
-                        return;
                     } else {
                         result.textContent = 'It is a draw!';
                     }
+                    break;
                 case "scissors":
                     if (computerResult === 'paper') {
                         result.textContent = 'You Win!';
-                        pScoreElement.textContent = ++pScore;
-                        return;
-                    } else {
+                        pScoreElement.textContent = ++pScore;                      
+                    } else if (computerResult === 'rock'){
                         result.textContent = 'You lost this round!';
-                        cScoreElement.textContent = ++cScore;
-                        return;
+                        cScoreElement.textContent = ++cScore;                      
+                    } else {
+                        result.textContent = 'It is a draw!';
                     }
+                    break;
                 case "paper":
                     if (computerResult === 'rock') {
                         result.textContent = 'You Win!';
-                        pScoreElement.textContent = ++pScore;
-                        return;
-                    } else {
+                        pScoreElement.textContent = ++pScore;                      
+                    } else if (computerResult === 'scissors'){
                         result.textContent = 'You lost this round!';
-                        cScoreElement.textContent = ++cScore;
-                        return;
+                        cScoreElement.textContent = ++cScore;                       
+                    } else {
+                        result.textContent = 'It is a draw!';
                     }
+                    break;
             };
         };
     };
