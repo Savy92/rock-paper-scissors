@@ -7,7 +7,7 @@ let cScore = 0;
 const start = document.querySelector('.intro-page button');
 const introScreen = document.querySelector('.intro-page');
 const matchScreen = document.querySelector('.match-container');
-// Variables defind to play match
+// Variables defined to play match
 const optionButtons = document.querySelectorAll('.options button');
 const playerHand = document.querySelector('.player-hand');
 const computerHand = document.querySelector('.computer-hand');
@@ -21,6 +21,7 @@ const game = () => {
     const startGame = () => {
         start.addEventListener('click', () => {
             introScreen.classList.add('fadeOut');
+            introScreen.classList.remove('fadeIn');
             matchScreen.classList.add('fadeIn');
         });
     };
@@ -28,24 +29,38 @@ const game = () => {
     const playMatch = () => {
         optionButtons.forEach((button) => {
             button.addEventListener('click', function (e) {
-                const newHand = e.currentTarget.ariaLabel.toLowerCase();
-                playerHand.src = `assets/images/full-length-${newHand}.png`;
-                if (newHand === 'paper' || newHand === 'scissors') {
-                    playerHand.style.transform = "rotate(90deg)";
-                } else {
-                    playerHand.style.transform = "scaleX(-1)";
-                }
-                // Computer result
-                const randomNumber = Math.floor(Math.random() * 3);
-                const computerResult = computerChoice[randomNumber];
-                computerHand.src = `assets/images/full-length-${computerResult}.png`;
-                if (computerResult === 'paper' || computerResult === 'scissors') {
-                    computerHand.style.transform = "rotate(-90deg)";
-                } else {
-                    computerHand.style.transform = "rotate(0)";
-                }
-                compareSelection(newHand, computerResult);
+                if (pScore >= 3 || cScore >= 3) {
+                    result.textContent = 'Match end';
+                    introScreen.classList.add('fadeIn');
+                    introScreen.classList.remove('fadeOut');
+                    matchScreen.classList.add('fadeOut');
+                    matchScreen.classList.remove('fadeIn');
 
+                    // reset score 
+                    pScore = 0;
+                    cScore = 0;
+                    pScoreElement.textContent = pScore;
+                    cScoreElement.textContent = cScore;
+                } else {
+                    const newHand = e.currentTarget.ariaLabel.toLowerCase();
+                    playerHand.src = `assets/images/full-length-${newHand}.png`;
+                    if (newHand === 'paper' || newHand === 'scissors') {
+                        playerHand.style.transform = "rotate(90deg)";
+                    } else {
+                        playerHand.style.transform = "scaleX(-1)";
+                    }
+                    // Computer result
+                    const randomNumber = Math.floor(Math.random() * 3);
+                    const computerResult = computerChoice[randomNumber];
+                    computerHand.src = `assets/images/full-length-${computerResult}.png`;
+                    if (computerResult === 'paper' || computerResult === 'scissors') {
+                        computerHand.style.transform = "rotate(-90deg)";
+                    } else {
+                        computerHand.style.transform = "rotate(0)";
+                    }
+
+                    compareSelection(newHand, computerResult);
+                }
             });
         });
         const compareSelection = (playerResult, computerResult) => {
