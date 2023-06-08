@@ -15,13 +15,18 @@ const introScreen = document.getElementsByClassName("intro-page");
 const gameScreen = document.getElementsByClassName("match-container");
 const choices = ["rock", "paper", "sicssors"];
 
-let Pscore = 0;
+
+
+let pscore = 0;
 let cScore = 0;
 
 /**
  * Add a click event listener to new game button
  */
-start.addEventListener("click", () => {
-    introScreen.classList.add("fadeOut");
-    gameScreen.classList.add("fadeIn");
-});
+//Start the game
+const startGame = () => {
+    start.addEventListener("click", () => {
+        introScreen.classList.add("fadeOut");
+        gameScreen.classList.add("fadeIn");
+    });
+};
