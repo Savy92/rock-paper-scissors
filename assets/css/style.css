@@ -112,3 +112,12 @@ div.fadeIn {
     opacity: 1;
     pointer-events: all;
 }
+
+.main-hands {
+    display: flex;
+    align-items: center;
+}
+
+.img-div {
+    flex: 33.33%;
+}
