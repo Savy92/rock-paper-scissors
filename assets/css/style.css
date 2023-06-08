@@ -130,6 +130,7 @@ div.fadeIn {
 .main-hands {
     display: flex;
     align-items: center;
+    height: 200px;
 }
 
 .img-div {
@@ -158,5 +159,8 @@ div.fadeIn {
     }
     .player-hand, .computer-hand {
         width: 60%;
+    }
+    .match-page {
+        margin-top: 230px;
     }
 }

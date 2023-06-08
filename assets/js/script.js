@@ -70,10 +70,12 @@ const game = () => {
                         result.textContent = 'You Win!';
                         pScoreElement.textContent = ++pScore;
                         return;
-                    } else {
+                    } else if (computerResult === 'paper') {
                         result.textContent = 'You lost this round!';
                         cScoreElement.textContent = ++cScore;
                         return;
+                    } else {
+                        result.textContent = 'It is a draw!';
                     }
                 case "scissors":
                     if (computerResult === 'paper') {
