@@ -41,6 +41,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    transition: opacity 0.5s ease;
 }
 
 .intro-page button {
@@ -61,6 +62,7 @@ body {
     margin: auto;
     text-align: center;
     margin-top: 300px;
+    transition: opacity 0.5s ease;
 }
 
 .match-page button {
