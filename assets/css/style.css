@@ -106,6 +106,6 @@ div.fadeOut {
 }
 
 div.fadeIn {
-    opacity: 0;
+    opacity: 1;
     pointer-events: all;
 }
