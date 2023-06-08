@@ -26,7 +26,7 @@ const game = () => {
     const playMatch = () => {
         optionButtons.forEach((button) => {
             button.addEventListener('click', function (e) {
-                const test = e.currentTarget.ariaLabel.toLowerCase();
+                const newHand = e.currentTarget.ariaLabel.toLowerCase();
                 playerHand.src = `assets/images/full-length-${test}.png`;
                 // Computer result
                 const randomNumber = Math.floor(Math.random() * 3);
