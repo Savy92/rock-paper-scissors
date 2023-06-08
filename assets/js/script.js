@@ -7,7 +7,7 @@ let cScore = 0;
 const start = document.querySelector('.intro-page button');
 const introScreen = document.querySelector('.intro-page');
 const matchScreen = document.querySelector('.match-container');
-// Variables defined to play match
+// Variables defind to play match
 const optionButtons = document.querySelectorAll('.options button');
 const playerHand = document.querySelector('.player-hand');
 const computerHand = document.querySelector('.computer-hand');
