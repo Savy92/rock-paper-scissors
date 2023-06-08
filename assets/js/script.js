@@ -9,8 +9,8 @@ const introScreen = document.querySelector('.intro-page');
 const matchScreen = document.querySelector('.match-container');
 // Variables defind to play match
 const optionButtons = document.querySelectorAll('.options button');
-const playerHand = document.querySelector | ('.player-hand');
-const computerHand = document.querySelector | ('.computer-hand');
+const playerHand = document.querySelector('.player-hand');
+const computerHand = document.querySelector('.computer-hand');
 const result = document.querySelector('.result');
 
 const game = () => {
@@ -25,7 +25,9 @@ const game = () => {
     // Play match, once the player selects an option
     const playMatch = () => {
         optionButtons.forEach((button) => {
-            button.addEventListener('click', function () {
+            button.addEventListener('click', function (e) {
+                const test = e.currentTarget.ariaLabel.toLowerCase();
+                playerHand.src = `assets/images/full-length-${test}.png`;
                 // Computer result
                 const randomNumber = Math.floor(Math.random() * 3);
                 const computerResult = computerChoice[randomNumber];
@@ -46,11 +48,10 @@ const game = () => {
                     if (computerResult === 'paper') {
                         result.te;
                     };
-
-                    startGame();
-                    playMatch();
             };
         };
     };
+    startGame();
+    playMatch();
 };
 game();
