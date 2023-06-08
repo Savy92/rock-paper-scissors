@@ -36,6 +36,12 @@ const game = () => {
                 // Computer result
                 const randomNumber = Math.floor(Math.random() * 3);
                 const computerResult = computerChoice[randomNumber];
+                computerHand.src = `assets/images/full-length-${computerResult}.png`;
+                if (computerResult === 'paper' || computerResult === 'scissors') {
+                    computerHand.style.transform = "rotate(-90deg)";
+                } else {
+                    computerHand.style.transform = "rotate(0)";
+                }
 
             });
         });
