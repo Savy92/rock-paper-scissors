@@ -44,7 +44,7 @@ body {
     color: #fff;
     display: flex;
     justify-content: space-around;
-    height: 20vh;
+    height: 40vh;
 }
 
 .score-area p {
