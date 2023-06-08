@@ -116,6 +116,7 @@ div.fadeIn {
 .main-hands {
     display: flex;
     align-items: center;
+    height: 350px;
 }
 
 .img-div {

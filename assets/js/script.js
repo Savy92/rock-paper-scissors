@@ -12,6 +12,8 @@ const optionButtons = document.querySelectorAll('.options button');
 const playerHand = document.querySelector('.player-hand');
 const computerHand = document.querySelector('.computer-hand');
 const result = document.querySelector('.result');
+const pScoreElement = document.querySelector('.pScore');
+const cScoreElement = document.querySelector('.cScore');
 
 const game = () => {
 
@@ -42,6 +44,7 @@ const game = () => {
                 } else {
                     computerHand.style.transform = "rotate(0)";
                 }
+                compareSelection(newHand, computerResult);
 
             });
         });
@@ -50,15 +53,33 @@ const game = () => {
                 case "rock":
                     if (computerResult === 'scissors') {
                         result.textContent = 'You Win!';
+                        pScoreElement.textContent = ++pScore;
                         return;
                     } else {
                         result.textContent = 'You lost this round!';
+                        cScoreElement.textContent = ++cScore;
                         return;
                     }
                 case "scissors":
                     if (computerResult === 'paper') {
-                        result.te;
-                    };
+                        result.textContent = 'You Win!';
+                        pScoreElement.textContent = ++pScore;
+                        return;
+                    } else {
+                        result.textContent = 'You lost this round!';
+                        cScoreElement.textContent = ++cScore;
+                        return;
+                    }
+                case "paper":
+                    if (computerResult === 'rock') {
+                        result.textContent = 'You Win!';
+                        pScoreElement.textContent = ++pScore;
+                        return;
+                    } else {
+                        result.textContent = 'You lost this round!';
+                        cScoreElement.textContent = ++cScore;
+                        return;
+                    }
             };
         };
     };
