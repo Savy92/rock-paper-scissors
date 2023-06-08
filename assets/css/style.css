@@ -99,11 +99,11 @@ body {
 
 .player-hand {
     transform: scaleX(-1);
-    width: 100%;
+    width: 70%;
 }
 
 .computer-hand {
-    width: 100%;
+    width: 70%;
 }
 
 .match-container {
@@ -130,7 +130,6 @@ div.fadeIn {
 .main-hands {
     display: flex;
     align-items: center;
-    height: 350px;
 }
 
 .img-div {
@@ -153,5 +152,11 @@ div.fadeIn {
     .score-area p {
         font-size: 25px;
         margin-top: 40px;
+    }
+    .main-hands {
+        height: auto;
+    }
+    .player-hand, .computer-hand {
+        width: 100%;
     }
 }
