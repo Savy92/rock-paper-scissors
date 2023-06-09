@@ -6,7 +6,7 @@ Welcome to my first interactive game site. My take on the beloved 100+ year old 
 
 Whether users want to just engage for a mental challenge, compete on the scoreboards or just have a little bit of fun. The website is designed to provide users with a clear and easy to navigate interface with clean and correct javascript to allow the game to run smoothly.
 
-<<<<<<<<<<<<<<<<<<<<<<<<IMAGE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+![Am i responsive screenshot](docs/images/am-i-responsive.png)
 
 <hr>
 
