@@ -143,6 +143,12 @@ div.fadeIn {
     width: 50%;
 }
 
+.result-options {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+
 /* media queries */
 
 /* for larger and medium screens size from 900px wide and down */
@@ -157,16 +163,21 @@ div.fadeIn {
     .title h1 {
         font-size: 35px;
     }
+
     .score-area p {
         font-size: 25px;
         margin-top: 40px;
     }
+
     .main-hands {
         height: auto;
     }
-    .player-hand, .computer-hand {
+
+    .player-hand,
+    .computer-hand {
         width: 60%;
     }
+
     .match-page {
         margin-top: 230px;
     }
