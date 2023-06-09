@@ -111,25 +111,13 @@ The background image was designed to capture the users attention whilst also sho
 
 The W3C Markup Validator, W3C CSS Validator & JSHint JavaScript Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-Accessibility:
-
-I confirm that the colours and fonts chosen are easy to read and accessible by running it through lighthouse on devtools.
-
-<<<<<<<<<<image>>>>>>>>>>>>
+![Light house scnreeshot](docs/images/lighthouse-score.png)
 
 ### Further Testing
 
 - Tests were done to make sure the website worked smoothly in different browsers (Google Chrome, Internet Explorer, Microsoft Edge and Safari.)
 - Devtools were used to verify that the website is responsive on different viewports.
 - Tests were done to ensure the game was operating correctly.
-
-<hr>
-
-## Known Bugs
-
-- After testing my HTML code in W3C Markup Validator, it confirmed that i had two bugs. One extra ending div without an opening and a span was used in a incorrect way.
-
-add text
 
 <hr>
 
