@@ -106,10 +106,12 @@ body {
 .player-hand {
     transform: scaleX(-1);
     width: 50%;
+    height: auto;
 }
 
 .computer-hand {
     width: 50%;
+    height: auto;
 }
 
 .match-container {
